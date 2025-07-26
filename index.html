@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Berkualitas - Hubungi Kami</title>
+    <style>
+        /* CSS Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            background-color: #25D366;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .product-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 10px;
+        }
+        
+        .product-details {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .features {
+            margin: 20px 0;
+        }
+        
+        .features li {
+            margin-bottom: 10px;
+            list-style-type: none;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .features li:before {
+            content: "✓";
+            color: #25D366;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #25D366;
+            margin: 20px 0;
+        }
+        
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #25D366;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 50px;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background-color: #128C7E;
+        }
+        
+        .whatsapp-icon {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        .testimonials {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .testimonial:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #25D366;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 22px;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .product-details, .testimonials {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Produk Berkualitas Premium</h1>
+            <p>Solusi Terbaik untuk Kebutuhan Anda</p>
+        </header>
+        
+        <img src="https://i.imgur.com/A3A4KLx.jpg" alt="Produk Kami" class="product-image">
+        
+        <div class="product-details">
+            <h2>Deskripsi Produk</h2>
+            <p>Produk kami dirancang dengan bahan berkualitas tinggi dan teknologi terbaru untuk memberikan pengalaman terbaik bagi pelanggan. Dengan desain yang elegan dan fungsionalitas yang unggul, produk ini menjadi pilihan tepat untuk Anda.</p>
+            
+            <h3>Fitur Utama:</h3>
+            <ul class="features">
+                <li>Bahan berkualitas premium</li>
+                <li>Desain modern dan elegan</li>
+                <li>Fungsionalitas tinggi</li>
+                <li>Daya tahan lama</li>
+                <li>Garansi resmi</li>
+                <li>Ramah lingkungan</li>
+            </ul>
+            
+            <div class="price">Harga: Rp 999.000</div>
+            <p class="limited">*Stok terbatas, pesan sekarang juga!</p>
+            
+            <button id="whatsappButton" class="cta-button">
+                <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                Pesan via WhatsApp Sekarang
+            </button>
+        </div>
+        
+        <div class="testimonials">
+            <h2>Apa Kata Pelanggan Kami?</h2>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"Produknya sangat bagus dan berkualitas. Pengiriman juga cepat. Recommended banget!"</p>
+                <p class="testimonial-author">- Budi, Jakarta</p>
+            </div>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"Saya sudah mencoba banyak produk sejenis, tapi ini yang terbaik. Harganya juga worth it untuk kualitasnya."</p>
+                <p class="testimonial-author">- Ani, Bandung</p>
+            </div>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"Pelayanannya memuaskan, produk sesuai gambar dan deskripsi. Akan order lagi next time."</p>
+                <p class="testimonial-author">- Rina, Surabaya</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2023 Nama Toko Anda. Semua hak dilindungi.</p>
+            <p>Hubungi kami untuk informasi lebih lanjut</p>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // WhatsApp button functionality
+            const whatsappButton = document.getElementById('whatsappButton');
+            
+            whatsappButton.addEventListener('click', function() {
+                // Replace with your WhatsApp link
+                window.open('https://wa.me/qr/ZYOFXFVTRVDYB1', '_blank');
+            });
+            
+            // Animation for the CTA button
+            let isHovering = false;
+            
+            whatsappButton.addEventListener('mouseenter', function() {
+                if (!isHovering) {
+                    isHovering = true;
+                    this.style.transform = 'scale(1.05)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                        setTimeout(() => {
+                            this.style.transform = 'scale(1.03)';
+                            setTimeout(() => {
+                                this.style.transform = 'scale(1)';
+                                isHovering = false;
+                            }, 100);
+                        }, 100);
+                    }, 100);
+                }
+            });
+            
+            // Simple animation for testimonials
+            const testimonials = document.querySelectorAll('.testimonial');
+            
+            function animateTestimonials() {
+                testimonials.forEach((testimonial, index) => {
+                    setTimeout(() => {
+                        testimonial.style.opacity = '1';
+                        testimonial.style.transform = 'translateY(0)';
+                    }, index * 200);
+                });
+            }
+            
+            // Initialize animations
+            testimonials.forEach(testimonial => {
+                testimonial.style.opacity = '0';
+                testimonial.style.transform = 'translateY(20px)';
+                testimonial.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            setTimeout(animateTestimonials, 500);
+        });
+    </script>
+</body>
+</html>
